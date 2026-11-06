@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustración de una taza de café de Lunaa Café">
+  <rect width="400" height="300" fill="#efe6d8"/>
+  <g fill="none" stroke="#4e2b17" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Luna creciente -->
+    <path d="M84 128a52 52 0 1 0 38-46 40 40 0 1 1-38 46z" fill="#8a5a33" stroke="none"/>
+    <path d="M120 120 h130 v55 a65 65 0 0 1 -130 0 z" fill="#fffdf7"/>
+    <path d="M250 132 h18 a26 26 0 0 1 0 52 h-18"/>
+    <path d="M150 96 c0 -12 10 -12 10 -24"/>
+    <path d="M185 96 c0 -12 10 -12 10 -24"/>
+    <path d="M220 96 c0 -12 10 -12 10 -24"/>
+  </g>
+  <text x="200" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#4e2b17">Lunaa Café</text>
+</svg>

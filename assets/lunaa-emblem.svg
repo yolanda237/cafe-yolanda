@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Lunaa Café — Café · Buenos momentos · Siempre">
+  <defs>
+    <mask id="moon-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="480" height="480">
+      <rect x="0" y="0" width="480" height="480" fill="#ffffff"/>
+      <circle cx="172" cy="88" r="66" fill="#000000"/>
+    </mask>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c99a63"/>
+      <stop offset="1" stop-color="#a97a4e"/>
+    </linearGradient>
+    <radialGradient id="coffee" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#7a4a21"/>
+      <stop offset="1" stop-color="#4a2a13"/>
+    </radialGradient>
+    <path id="sparkle" d="M0-12 L2.4-2.4 L12 0 L2.4 2.4 L0 12 L-2.4 2.4 L-12 0 L-2.4-2.4 Z"/>
+  </defs>
+
+  <!-- Anillo exterior partido (gaps a los lados) -->
+  <path d="M49.6 158.2 A180 180 0 0 1 430.4 158.2" fill="none" stroke="#4e2b17" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430.4 251.8 A180 180 0 0 1 49.6 251.8" fill="none" stroke="#4e2b17" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="240" cy="205" r="154" fill="none" stroke="#4e2b17" stroke-width="2.6" opacity="0.9"/>
+
+  <!-- Luna creciente -->
+  <circle cx="140" cy="106" r="78" fill="#8a5a33" mask="url(#moon-cut)"/>
+
+  <!-- Destellos -->
+  <g fill="#4e2b17">
+    <use href="#sparkle" transform="translate(300,50) scale(1.05)"/>
+    <use href="#sparkle" transform="translate(352,105) scale(0.72)"/>
+    <use href="#sparkle" transform="translate(106,46) scale(0.66)"/>
+    <use href="#sparkle" transform="translate(374,178) scale(0.82)"/>
+    <use href="#sparkle" transform="translate(90,166) scale(0.7)"/>
+    <circle cx="338" cy="66" r="2.6"/>
+    <circle cx="122" cy="172" r="2.4"/>
+    <circle cx="372" cy="120" r="2.2"/>
+  </g>
+
+  <!-- Vapor -->
+  <path d="M238 128 C 228 116 244 110 234 98 C 226 88 242 82 236 66" fill="none" stroke="#8a5a33" stroke-width="8" stroke-linecap="round"/>
+  <path d="M262 132 C 254 122 266 116 258 106 C 252 98 264 92 260 80" fill="none" stroke="#b98a5a" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Plato -->
+  <ellipse cx="240" cy="236" rx="112" ry="15" fill="#f7ead8" stroke="#4e2b17" stroke-width="6"/>
+  <ellipse cx="240" cy="234" rx="74" ry="8.5" fill="none" stroke="#4e2b17" stroke-width="3"/>
+
+  <!-- Taza (cuerpo) -->
+  <path d="M150 142 H330 C330 207 306 229 240 229 C174 229 150 207 150 142 Z"
+        fill="#f7ead8" stroke="#4e2b17" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Superficie del café -->
+  <ellipse cx="240" cy="142" rx="90" ry="15" fill="url(#coffee)" stroke="#4e2b17" stroke-width="5"/>
+  <!-- Corazón de latte art -->
+  <path d="M240 137.5 C 237.2 133.4 229.6 135 229.6 141 C 229.6 146.6 235.2 150 240 153.6 C 244.8 150 250.4 146.6 250.4 141 C 250.4 135 242.8 133.4 240 137.5 Z"
+        fill="#f7ead8"/>
+  <!-- Asa -->
+  <path d="M330 152 C 366 152 366 214 326 216" fill="none" stroke="#4e2b17" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- Moño bajo el café -->
+  <path d="M238 190 C 226 177 206 177 201 187 C 197 197 210 204 238 194 Z" fill="#4e2b17"/>
+  <path d="M242 190 C 254 177 274 177 279 187 C 283 197 270 204 242 194 Z" fill="#4e2b17"/>
+  <path d="M235 197 L224 219 L235 214 L241 224 L245 198 Z" fill="#4e2b17"/>
+  <path d="M245 197 L256 219 L245 214 L239 224 L235 198 Z" fill="#4e2b17"/>
+  <circle cx="240" cy="191" r="6.5" fill="#4e2b17"/>
+  <circle cx="240" cy="191" r="2.3" fill="#f7ead8"/>
+
+  <!-- LUNAA -->
+  <text x="240" y="312" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-weight="800" font-size="78"
+        letter-spacing="7" fill="#4e2b17" stroke="#f5e9d8" stroke-width="6"
+        paint-order="stroke fill" stroke-linejoin="round">LUNAA</text>
+
+  <!-- Café (script) -->
+  <text x="240" y="362" text-anchor="middle"
+        font-family="'Segoe Script','Snell Roundhand','Brush Script MT',cursive" font-style="italic"
+        font-weight="700" font-size="44" fill="#4e2b17">Café</text>
+  <path d="M168 371 Q 240 384 312 369" fill="none" stroke="#4e2b17" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- Cinta -->
+  <path d="M72 388 L14 372 L26 412 L14 444 L72 434 Z" fill="#a97a4e" stroke="#4e2b17" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M408 388 L466 372 L454 412 L466 444 L408 434 Z" fill="#a97a4e" stroke="#4e2b17" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M70 390 Q240 418 410 390 L410 440 Q240 468 70 440 Z" fill="url(#ribbon)" stroke="#4e2b17" stroke-width="4" stroke-linejoin="round"/>
+  <text x="240" y="432" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif" font-weight="800" font-size="14.5"
+        letter-spacing="1.6" fill="#33210f">CAFÉ · BUENOS MOMENTOS · SIEMPRE</text>
+</svg>
