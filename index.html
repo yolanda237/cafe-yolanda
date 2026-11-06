@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunaa Café | Café de especialidad y brunch en Madrid</title>
+  <meta name="description" content="Lunaa Café es un café de especialidad en Madrid: granos de tueste propio, pan de masa madre, opciones veganas y sin gluten, reserva de mesa en línea y pedido para llevar. Café · Buenos momentos · Siempre.">
+  <meta name="theme-color" content="#4e2b17">
+  <link rel="icon" type="image/svg+xml" href="assets/lunaa-emblem.svg">
+  <link rel="canonical" href="https://www.lunacafe.es/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Lunaa Café">
+  <meta property="og:description" content="Buenos momentos, siempre. Café de especialidad y brunch todo el día, pan de masa madre en Calle de la Palma 42, Madrid.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tipografías (Fraunces para titulares, Inter para texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,SOFT,WONK@9..144,0..100,0..1;9..144,0..100,0..1:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <!-- Salto de navegación para teclado y lectores de pantalla -->
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- Aviso superior -->
+  <div class="notice-bar" role="note">
+    <div class="shell notice-inner">
+      <span aria-hidden="true">●</span>
+      <span>Café · Buenos momentos · Siempre — Brunch hasta las 16:30 · Lunes cerrado</span>
+    </div>
+  </div>
+
+  <!-- ===================== Cabecera ===================== -->
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio">
+        <img class="brand-logo" src="assets/lunaa-emblem.svg" alt="" width="56" height="56">
+        <span class="brand-word">Lunaa<small>Café</small></span>
+      </a>
+
+      <nav class="primary-nav" id="nav-primary" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#carta">La carta</a></li>
+          <li><a href="#reservas">Reservar mesa</a></li>
+          <li><a href="#llevar">Para llevar</a></li>
+          <li><a href="#contacto">Encuéntranos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro" title="Cambiar apariencia">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+
+        <button class="cart-btn" id="cart-open" aria-controls="cart-drawer" aria-label="Abrir pedido para llevar, 0 artículos">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5.2 3.5A1.5 1.5 0 0 0 3.8 2.4H2"/><circle cx="9.5" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+          <span class="cart-btn-text">Pedido</span>
+          <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+
+        <button class="icon-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-primary" aria-label="Abrir menú de navegación">
+          <svg class="icon-burger" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===================== Portada ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Café de especialidad · Brunch todo el día</p>
+          <h1 id="hero-title">Desayunos lentos para <em>mañanas largas</em>.</h1>
+          <p class="lead">Granos de tueste propio, pan de masa madre y cocina honesta en el barrio de Palma. Café para llevar recién filtrado o brunch sin prisa en nuestra terraza.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#carta">Ver la carta</a>
+            <a class="btn btn-ghost" href="#reservas">Reservar mesa</a>
+          </div>
+
+          <div class="hero-meta" aria-label="Valoración y ubicación">
+            <span class="rating" title="4,9 sobre 5">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.5-4.9 4.4 1.5 6.5L12 17l-6.1 3.6 1.5-6.5-4.9-4.4 6.6-.5z"/></svg>
+              <strong>4,9</strong> · 1.280 reseñas
+            </span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Calle de la Palma 42, Madrid</span>
+          </div>
+
+          <p class="open-pill" id="open-status" data-state="unknown">Consultando horario…</p>
+        </div>
+
+        <figure class="hero-art">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=80"
+               alt="Interior luminoso de Lunaa Café: mesa de madera, butacas de cuero y barra de café al fondo"
+               width="1400" height="933" fetchpriority="high" decoding="async"
+               onerror="this.onerror=null;this.src='assets/placeholder.svg'">
+          <figcaption class="visually-hidden">Fotografía del interior del local</figcaption>
+          <div class="float-card float-card-a" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-4.2-7-7.6-7-11a7 7 0 0 1 14 0c0 3.4-2.5 6.8-7 11z"/><path d="M12 12v6"/></svg>
+            <span><strong>Avocado toast</strong><br>pan de masa madre · S/ 38.00</span>
+          </div>
+          <div class="float-card float-card-b" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11a4 4 0 0 1 2-3.4A4.5 4.5 0 0 1 12 5a4.5 4.5 0 0 1 5 2.6A4 4 0 0 1 19 11v3H5z"/><path d="M5 14h14v2a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/></svg>
+            <span><strong>Masa madre</strong><br>tostada al momento</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== Valores ===================== -->
+    <section class="values" aria-label="Nuestros compromisos">
+      <div class="shell values-grid">
+        <div class="value-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13h12M4 17h12M4 9h12"/><path d="M18 6c1.7 0 3 1.3 3 3s-1.3 3-3 3"/></svg>
+          <div><h2 class="value-title">Tueste propio</h2><p>Origen Etiopía y Brasil, tostado cada quincena.</p></div>
+        </div>
+        <div class="value-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10c4-4 12-4 16 0M4 14c4 4 12 4 16 0M4 10v4M20 10v4"/></svg>
+          <div><h2 class="value-title">Masa madre</h2><p>Hogazas fermentadas 18 h, tostadas y con tomate.</p></div>
+        </div>
+        <div class="value-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-4.2-7-7.6-7-11a7 7 0 0 1 14 0c0 3.4-2.5 6.8-7 11z"/><path d="M12 12v6"/></svg>
+          <div><h2 class="value-title">Proximidad</h2><p>Huevo campero, verdura de temporada y leche fresca.</p></div>
+        </div>
+        <div class="value-item">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.5 2.5-1 4-1 6a4 4 0 0 0 8 0c0-1-.4-1.8-1-2.5"/><path d="M6 21h12"/><path d="M12 13v8"/></svg>
+          <div><h2 class="value-title">Para todos</h2><p>Opciones veganas, sin gluten y sin lactosa siempre.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Carta ===================== -->
+    <section class="menu" id="carta" aria-labelledby="menu-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">La carta</p>
+            <h2 id="menu-title">Elige, filtra y pide</h2>
+            <p class="section-sub">Precios con IGV incluido. Indica alérgenos o intolerancias a nuestro equipo; la carta se actualiza cada temporada.</p>
+          </div>
+          <div class="menu-count" id="menu-count" aria-live="polite">18 platos</div>
+        </div>
+
+        <div class="menu-toolbar" role="search">
+          <div class="field search-field">
+            <label class="visually-hidden" for="menu-search">Buscar en la carta</label>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+            <input type="search" id="menu-search" name="q" placeholder="Busca un plato, ingrediente…" autocomplete="off" aria-describedby="menu-hint">
+            <button class="clear-search" id="clear-search" hidden aria-label="Borrar buscador">×</button>
+          </div>
+          <p class="visually-hidden" id="menu-hint">Los resultados se actualizan mientras escribes.</p>
+
+          <div class="chip-row" role="group" aria-label="Categorías de la carta" id="category-chips"></div>
+          <div class="chip-row chip-row-secondary" role="group" aria-label="Preferencias alimentarias" id="diet-chips"></div>
+
+          <button class="link-btn" id="reset-filters" hidden>Borrar todos los filtros</button>
+        </div>
+
+        <p class="visually-hidden" id="menu-status" aria-live="polite"></p>
+        <div class="menu-grid" id="menu-grid" aria-label="Platos disponibles"></div>
+
+        <div class="menu-empty" id="menu-empty" hidden>
+          <svg class="empty-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 13.5h7M10 10.5h4"/></svg>
+          <h3>Nada por aquí…</h3>
+          <p>No encontramos platos con esos filtros. Prueba con otra búsqueda o borra los filtros.</p>
+          <button class="btn btn-ghost" id="empty-reset">Ver toda la carta</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Para llevar ===================== -->
+    <section class="takeaway" id="llevar" aria-labelledby="llevar-title">
+      <div class="shell takeaway-inner">
+        <div>
+          <p class="eyebrow eyebrow-light">Para llevar</p>
+          <h2 id="llevar-title">Pide desde la carta y recoge sin esperas</h2>
+          <p>Añade tus platos favoritos, elige la hora de recogida y te avisamos por SMS cuando esté listo. Envases compostables incluidos en el precio.</p>
+        </div>
+        <button class="btn btn-light" id="takeaway-cta">Hacer mi pedido para llevar</button>
+      </div>
+    </section>
+
+    <!-- ===================== Reservas ===================== -->
+    <section class="reservas" id="reservas" aria-labelledby="reservas-title">
+      <div class="shell reservas-grid">
+        <div class="reservas-info">
+          <p class="eyebrow">Reservas</p>
+          <h2 id="reservas-title">Guarda tu mesa</h2>
+          <p class="section-sub">Confirmación inmediata y cancelación gratuita hasta 2 horas antes. Para grupos de más de 8 personas, escríbenos a hola@lunacafe.es.</p>
+
+          <ul class="perks">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg> Terraza con enchufes, perfecta para trabajar</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg> Menú de desayuno completo por S/ 58.00</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg> Accesible: entrada sin escalones y aseo adaptado</li>
+          </ul>
+
+          <div class="hours-card" aria-label="Horario de apertura">
+            <h3>Horario</h3>
+            <dl class="hours-list">
+              <div><dt>Lunes</dt><dd>Cerrado</dd></div>
+              <div><dt>Martes – Viernes</dt><dd>08:30 – 17:00</dd></div>
+              <div><dt>Sábado – Domingo</dt><dd>09:00 – 17:30</dd></div>
+            </dl>
+            <p class="hours-contact"><a href="tel:+34910123456">910 123 456</a> · <a href="mailto:hola@lunacafe.es">hola@lunacafe.es</a></p>
+          </div>
+
+          <div id="mis-reservas" class="mis-reservas" aria-live="polite"></div>
+        </div>
+
+        <div class="reservas-card">
+          <form id="reservation-form" novalidate>
+            <h3 class="form-title">Datos de la reserva</h3>
+
+            <div class="error-summary" id="reservation-errors" role="alert" tabindex="-1" hidden>
+              <p><strong>Revisa estos campos:</strong></p>
+              <ul></ul>
+            </div>
+
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="res-name">Nombre y apellidos <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="res-name" name="name" autocomplete="name" required aria-describedby="res-name-err">
+                <p class="field-error" id="res-name-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="res-phone">Teléfono <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="res-phone" name="phone" autocomplete="tel" placeholder="612 345 678" required aria-describedby="res-phone-err">
+                <p class="field-error" id="res-phone-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="res-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="res-email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required aria-describedby="res-email-err">
+                <p class="field-error" id="res-email-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="res-date">Fecha <span class="req" aria-hidden="true">*</span></label>
+                <input type="date" id="res-date" name="date" required aria-describedby="res-date-err">
+                <p class="field-error" id="res-date-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="res-time">Hora <span class="req" aria-hidden="true">*</span></label>
+                <select id="res-time" name="time" required aria-describedby="res-time-err"></select>
+                <p class="field-error" id="res-time-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="res-party">Comensales <span class="req" aria-hidden="true">*</span></label>
+                <select id="res-party" name="party" required></select>
+              </div>
+
+              <div class="field">
+                <label for="res-zone">Zona preferida</label>
+                <select id="res-zone" name="zone">
+                  <option>Sin preferencia</option>
+                  <option>Terraza</option>
+                  <option>Interior junto a la ventana</option>
+                  <option>Barra (experiencia café)</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="res-occasion">Ocasión</label>
+                <select id="res-occasion" name="occasion">
+                  <option>Ninguna en especial</option>
+                  <option>Cumpleaños</option>
+                  <option>Aniversario</option>
+                  <option>Reunión de trabajo</option>
+                </select>
+              </div>
+
+              <div class="field field-full">
+                <label for="res-notes">Notas para la cocina (alergias, trona, etc.)</label>
+                <textarea id="res-notes" name="notes" rows="2" maxlength="240" aria-describedby="res-notes-count"></textarea>
+                <p class="field-hint" id="res-notes-count">0 / 240</p>
+              </div>
+            </div>
+
+            <div class="field field-check">
+              <input type="checkbox" id="res-privacy" name="privacy" required aria-describedby="res-privacy-err">
+              <label for="res-privacy">Acepto la política de privacidad y el uso de SMS para confirmar la reserva <span class="req" aria-hidden="true">*</span></label>
+              <p class="field-error" id="res-privacy-err" hidden></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Confirmar reserva</button>
+            <p class="form-footnote">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+          </form>
+
+          <div class="reservation-confirmation" id="reservation-confirmation" hidden tabindex="-1" aria-labelledby="confirmation-title">
+            <div class="confirmation-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.5 12.5l2.5 2.5 5-6"/></svg>
+            </div>
+            <h3 id="confirmation-title">¡Mesa reservada!</h3>
+            <p class="confirmation-code">Código de reserva: <strong id="confirmation-code">RSV-0000</strong></p>
+            <dl class="confirmation-details" id="confirmation-details"></dl>
+            <div class="confirmation-actions">
+              <button class="btn btn-ghost" id="download-ics">Añadir al calendario (.ics)</button>
+              <button class="btn btn-primary" id="new-reservation">Hacer otra reserva</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contacto ===================== -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="shell contacto-grid">
+        <div class="map-wrap">
+          <iframe title="Mapa: Lunaa Café, Calle de la Palma 42, Madrid"
+                  src="https://www.google.com/maps?q=Lunaa%20Caf%C3%A9%20Calle%20de%20la%20Palma%2042%20Madrid&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contacto-copy">
+          <p class="eyebrow">Encuéntranos</p>
+          <h2 id="contacto-title">En el barrio de la Palma</h2>
+          <address>
+            <strong>Lunaa Café</strong><br>
+            Calle de la Palma 42, bajo<br>
+            28004 Madrid, España<br>
+            <a href="tel:+34910123456">910 123 456</a><br>
+            <a href="mailto:hola@lunacafe.es">hola@lunacafe.es</a>
+          </address>
+
+          <h3 class="contacto-subtitle">Cómo llegar</h3>
+          <ul class="howto">
+            <li><strong>Metro:</strong> Noviciado (L2 y L10), 4 min andando.</li>
+            <li><strong>BiciMAD:</strong> estación 214 en la misma calle.</li>
+            <li><strong>Coche:</strong> parking público Plaza del Dos de Mayo (5 min).</li>
+          </ul>
+
+          <div class="social" aria-label="Redes sociales">
+            <a class="icon-btn" href="https://www.instagram.com/lunacafe" aria-label="Instagram de Lunaa Café (se abre en una pestaña nueva)" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.tripadvisor.es/lunacafe" aria-label="TripAdvisor de Lunaa Café (se abre en una pestaña nueva)" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="7.5" cy="13" r="3.2"/><circle cx="16.5" cy="13" r="3.2"/><path d="M4 13c2-3 4.5-4.4 8-4.4S18 10 20 13"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Pie ===================== -->
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <p class="brand-word brand-word-light brand-lockup">
+          <img class="brand-logo brand-logo-foot" src="assets/lunaa-emblem.svg" alt="" width="72" height="72">
+          <span>Lunaa<small>Café</small></span>
+        </p>
+        <p>Café · Buenos momentos · Siempre. Tueste propio, masa madre y cocina honesta desde 2019.</p>
+        <form class="newsletter" id="newsletter-form" novalidate>
+          <label for="newsletter-email">Recetas y aperturas, una vez al mes</label>
+          <div class="newsletter-row">
+            <input type="email" id="newsletter-email" name="email" placeholder="tucorreo@ejemplo.com" required aria-describedby="newsletter-feedback">
+            <button type="submit" class="btn btn-light btn-sm">Quiero enterarme</button>
+          </div>
+          <p class="newsletter-feedback" id="newsletter-feedback" role="status"></p>
+        </form>
+      </div>
+      <nav class="footer-col" aria-label="Explorar">
+        <h2 class="footer-heading">Explorar</h2>
+        <ul>
+          <li><a href="#carta">La carta</a></li>
+          <li><a href="#reservas">Reservar mesa</a></li>
+          <li><a href="#llevar">Para llevar</a></li>
+          <li><a href="#contacto">Cómo llegar</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Ayuda">
+        <h2 class="footer-heading">Ayuda</h2>
+        <ul>
+          <li><a href="mailto:hola@lunacafe.es">Alérgenos e intolerancias</a></li>
+          <li><a href="mailto:hola@lunacafe.es">Grupos y eventos</a></li>
+          <li><button class="link-plain" data-open-dialog="dialog-legal">Aviso legal</button></li>
+          <li><button class="link-plain" data-open-dialog="dialog-privacy">Privacidad</button></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2 class="footer-heading">Horario</h2>
+        <ul class="footer-hours">
+          <li>Lunes: cerrado</li>
+          <li>Mar – Vie: 08:30–17:00</li>
+          <li>Sáb – Dom: 09:00–17:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="shell footer-bottom-inner">
+        <p>© <span id="footer-year">2026</span> Lunaa Café. Todos los derechos reservados.</p>
+        <p>Hecho con HTML, CSS y JavaScript — sin frameworks.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== Carrito (drawer) ===================== -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1" hidden>
+    <div class="drawer-head">
+      <h2 id="cart-title">Tu pedido para llevar</h2>
+      <button class="icon-btn" id="cart-close" aria-label="Cerrar el pedido">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="cart-empty" id="cart-empty">
+        <svg class="empty-icon" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10h9v4.5a4.5 4.5 0 0 1-9 0V10z"/><path d="M15 10.8h1.8a2.2 2.2 0 0 1 0 4.4H15"/><path d="M8.3 7.8c0-1.2 1.1-1.2 1.1-2.4M12 7.8c0-1.2 1.1-1.2 1.1-2.4"/></svg>
+        <p><strong>Tu bandeja está vacía.</strong></p>
+        <p>Añade algo rico de la carta; lo preparamos en 15–20 minutos.</p>
+        <button class="btn btn-ghost" id="cart-empty-cta">Ver la carta</button>
+      </div>
+      <ul class="cart-items" id="cart-items" aria-label="Artículos del pedido"></ul>
+    </div>
+
+    <div class="drawer-foot" id="cart-foot" hidden>
+      <div class="cart-line"><span>Subtotal</span><span id="cart-subtotal">S/ 0.00</span></div>
+      <div class="cart-line"><span>Recogida estimada</span><span id="cart-eta">—</span></div>
+      <div class="cart-line cart-line-total"><span>Total</span><span id="cart-total">S/ 0.00</span></div>
+      <button class="btn btn-primary btn-block" id="checkout-open">Tramitar pedido para llevar</button>
+      <p class="cart-note">Pago al recoger en caja o con enlace de pago. Envases compostables incluidos.</p>
+    </div>
+  </aside>
+
+  <!-- ===================== Diálogo de pedido ===================== -->
+  <dialog class="modal" id="order-dialog" aria-labelledby="order-dialog-title">
+    <form id="order-form" method="dialog" novalidate>
+      <div class="modal-head">
+        <h2 id="order-dialog-title">Confirmar pedido para llevar</h2>
+        <button type="button" class="icon-btn" id="order-close" aria-label="Cerrar ventana de pedido">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="error-summary" id="order-errors" role="alert" tabindex="-1" hidden>
+        <p><strong>Revisa estos campos:</strong></p>
+        <ul></ul>
+      </div>
+
+      <div class="form-grid">
+        <div class="field field-full">
+          <label for="order-name">Nombre <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="order-name" name="name" autocomplete="name" required aria-describedby="order-name-err">
+          <p class="field-error" id="order-name-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="order-phone">Teléfono <span class="req" aria-hidden="true">*</span></label>
+          <input type="tel" id="order-phone" name="phone" autocomplete="tel" placeholder="612 345 678" required aria-describedby="order-phone-err">
+          <p class="field-error" id="order-phone-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="order-pickup">Recoger a las</label>
+          <select id="order-pickup" name="pickup"></select>
+        </div>
+        <fieldset class="field field-full radio-group">
+          <legend>Método de pago</legend>
+          <label class="radio-option"><input type="radio" name="payment" value="al-recoger" checked> Pago al recoger en caja</label>
+          <label class="radio-option"><input type="radio" name="payment" value="enlace"> Enlace de pago seguro (Bizum / tarjeta)</label>
+        </fieldset>
+        <div class="field field-full">
+          <label for="order-notes">Notas para la cocina</label>
+          <textarea id="order-notes" name="notes" rows="2" maxlength="240" placeholder="Sin cebolla, café para llevar aparte…"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-summary" aria-label="Resumen del pedido">
+        <ul id="order-summary-list"></ul>
+        <div class="cart-line cart-line-total"><span>Total</span><span id="order-summary-total">S/ 0.00</span></div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Confirmar pedido</button>
+    </form>
+
+    <div class="order-success" id="order-success" hidden tabindex="-1" aria-labelledby="order-success-title">
+      <div class="confirmation-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2 id="order-success-title">¡Pedido confirmado!</h2>
+      <p class="confirmation-code">Código de recogida: <strong id="order-code">M-0000</strong></p>
+      <p id="order-eta-text">Te avisaremos por SMS cuando esté listo (≈ 15–20 minutos).</p>
+      <div class="confirmation-actions">
+        <button class="btn btn-ghost" id="download-ticket">Descargar ticket (.txt)</button>
+        <button class="btn btn-primary" id="order-done">Entendido</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ===================== Diálogos legales ===================== -->
+  <dialog class="modal" id="dialog-legal" aria-labelledby="legal-title">
+    <div class="modal-head">
+      <h2 id="legal-title">Aviso legal</h2>
+      <button type="button" class="icon-btn" data-close-dialog aria-label="Cerrar aviso legal">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <p>Lunaa Café S.L. · Calle de la Palma 42, 28004 Madrid · CIF B-87654321 · Inscrita en el Registro Mercantil de Madrid. Sitio informativo; las reservas y pedidos confirmados por este sitio generan un contrato de prestación de servicios de hostelería sujeto a la legislación española.</p>
+  </dialog>
+
+  <dialog class="modal" id="dialog-privacy" aria-labelledby="privacy-title">
+    <div class="modal-head">
+      <h2 id="privacy-title">Privacidad</h2>
+      <button type="button" class="icon-btn" data-close-dialog aria-label="Cerrar privacidad">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <p>Responsable: Lunaa Café S.L. Finalidad: gestionar reservas y pedidos. Base jurídica: ejecución de contrato e interés de enviar confirmaciones por SMS/email. Los datos no se ceden a terceros salvo obligación legal. Puedes ejercer tus derechos de acceso, rectificación, supresión y portabilidad en hola@lunacafe.es. Conservación: 2 años desde la última visita.</p>
+  </dialog>
+
+  <!-- Región de avisos para lector de pantalla -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

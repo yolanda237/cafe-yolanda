@@ -1,0 +1,12 @@
+{
+  "name": "cafe-yolanda",
+  "version": "1.0.0",
+  "description": "Lunaa Café — café de especialidad y brunch. Web estática servida con Node (sin dependencias).",
+  "private": true,
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
